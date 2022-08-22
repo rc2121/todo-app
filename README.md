@@ -10,11 +10,15 @@
 
 ### `yarn dev`
 
-2. After that you need to follow the same step for the client as well
+2. After that you need to follow the same step for the client as well, but here before you start the development server make sure you hit the script for automatically generating queries and mutations for the graphql.
 
 ## For Installing Dependencies
 
 ### `yarn`
+
+## For Generating Graphql Queries and Mutations
+
+### `yarn graphql-codegen`
 
 ## For Starting The React Development Server
 
