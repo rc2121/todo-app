@@ -1,0 +1,42 @@
+"""Exposes a URL that specifies the behavior of this scalar."""
+directive @specifiedBy(
+  """The URL that specifies the behavior of this scalar."""
+  url: String!
+) on SCALAR
+
+type authentication {
+  userName: String
+  password: String
+}
+
+input authenticationInput {
+  userName: String!
+  password: String!
+}
+
+type deleteTodo {
+  deletedCount: Int!
+}
+
+type Mutation {
+  addTodo(name: String!): todo!
+  editTodo(id: String!, input: TodoUpdateInput!): todo!
+  deleteTodo(id: String!): deleteTodo!
+}
+
+type Query {
+  login(input: authenticationInput!): Boolean!
+  getTodos: [todo!]!
+}
+
+type todo {
+  id: String!
+  name: String!
+  createdAt: String!
+  updatedAt: String!
+}
+
+input TodoUpdateInput {
+  name: String!
+}
+

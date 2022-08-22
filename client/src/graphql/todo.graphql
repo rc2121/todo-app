@@ -1,0 +1,31 @@
+fragment todos on todo {
+    id
+    name
+    done
+    createdAt
+    updatedAt
+}
+
+query getTodos {
+    getTodos {
+        ...todos        
+    }
+}
+
+mutation addTodo($input: TodoInput!) {
+   addTodo(input: $input) {
+        ...todos
+   } 
+}
+
+mutation editTodo($id: String!, $input: TodoInput!) {
+    editTodo(id: $id, input: $input) {
+        ...todos
+    }
+}
+
+mutation deleteTodo($id: String!) {
+    deleteTodo(id: $id) {
+        deletedCount
+    }
+}

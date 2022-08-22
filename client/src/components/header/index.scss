@@ -1,0 +1,17 @@
+.headerWrapper {
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 1.5em;
+    .linkWrapper {
+        .link {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.3em;
+            margin-right: 1em;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

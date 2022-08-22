@@ -1,0 +1,22 @@
+.mainWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    .mainContainer {
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        padding: 2em;
+        background: aliceblue;
+        box-shadow: 5px 5px 7px 3px #f0f8ff7a;
+        min-width: 25%;
+        border-radius: 4px;
+        .signInWrapper {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-top: 0.8em;
+        }
+    }
+}

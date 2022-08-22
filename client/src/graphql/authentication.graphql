@@ -1,0 +1,7 @@
+query login($loginInput: authenticationInput!) {
+  login(input: $loginInput)
+}
+
+mutation signup($input: authenticationInput!) {
+  signup(input: $input)
+}
