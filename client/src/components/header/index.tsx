@@ -12,8 +12,8 @@ const Header = () => {
     return(
         <div>{isAuthenticated && <div className='headerWrapper'>
                 <div className='linkWrapper'>
-                    <NavLink className='link' to="/">Home</NavLink>
-                    <NavLink className='link' to="/todos">Todos</NavLink>
+                    <NavLink className={(active) => active.isActive ? 'activeLink link' : 'link'} to="/">Home</NavLink>
+                    <NavLink className={(active) => active.isActive ? 'activeLink link' : 'link'} to="/todos">Todos</NavLink>
                 </div>
                 <LogoutButton onClick={handleLogout}>Logout</LogoutButton>
             </div>

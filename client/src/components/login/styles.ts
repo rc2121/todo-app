@@ -1,11 +1,6 @@
 import styled from 'styled-components'
 
 export const LoginWrapper = styled.div`
-    // padding: 20px;
-    // width: 30%;
-    // background: aliceblue;
-    // border-radius: 4px;
-    // box-shadow: 5px 5px 7px 3px grey;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,8 +52,6 @@ export const Textarea = styled.textarea`
 
 export const Button = styled.button`
     padding: 0.5em;
-    // margin: 0.5em 1em;
-    // width: 11em;
     color: palevioletred;
     background: transparent;
     border-radius: 5px;

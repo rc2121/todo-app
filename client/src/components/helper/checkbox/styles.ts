@@ -25,7 +25,6 @@ export const StyledCheckbox = styled.div<CheckboxPropsType>`
     display: inline-block;
     width: 16px;
     height: 16px;
-    // border: 0.5px solid #f2f2f3;
     background: ${props => props.checked ? 'palevioletred' : '#9292a3'};
     border-radius: 3px;
     transition: all 150ms;
@@ -38,6 +37,5 @@ export const StyledCheckbox = styled.div<CheckboxPropsType>`
 export const Icon = styled.div<CheckboxPropsType>`
     visibility: ${props => props.checked ? 'visible': 'hidden'};
     display: flex;
-    // vertical-align: middle;
     color: #fff;
 `;

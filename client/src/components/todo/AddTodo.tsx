@@ -61,7 +61,7 @@ const AddTodo = ({ showModal, editData, setShowModal, handleCloseModal, handleAd
                   {errors.name && <Error>{errors.name} </Error>}
                 </InputWrapper>
                 <InputWrapper>
-                  <label className="markDoneWrapper">
+                  <label className="markDoneInputWrapper">
                     <CheckBox checked={!!values.done} onChecked={() => setFieldValue('done', values.done ? 0 : 1 )} />
                     <span>Mark as done</span>
                   </label>
